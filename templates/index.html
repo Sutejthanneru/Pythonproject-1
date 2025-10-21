@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Flower Prediction</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+    <h2>Iris Flower Prediction</h2>
+    <form action="/predict" method="post">
+        <label>Sepal Length:</label><br>
+        <input type="text" name="sepal_length"><br><br>
+
+        <label>Sepal Width:</label><br>
+        <input type="text" name="sepal_width"><br><br>
+
+        <label>Petal Length:</label><br>
+        <input type="text" name="petal_length"><br><br>
+
+        <label>Petal Width:</label><br><br>
+        <input type="text" name="petal_width"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
